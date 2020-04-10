@@ -1,0 +1,14 @@
+**/target
+*maven-eclipse.xml
+*.project
+*.settings
+*.externalToolBuilders
+*IS_UNDEFINED*
+*.classpath
+*.DS_Store
+*.log
+*.iml
+*.ipr
+*.iws
+*.idea
+*.class
