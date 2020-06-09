@@ -104,7 +104,7 @@ Common usage:
     <taskdef resource="net/sf/antcontrib/antlib.xml" classpathref="class.path"/>
 
     <!-- ============================================================= -->
-    <!-- Print some useful help text                                  -->
+    <!-- Print some useful help text.                                  -->
     <!-- ============================================================= -->
     <target name="help">
 
@@ -147,7 +147,7 @@ Common usage:
 
 
     <!-- ============================================================= -->
-    <!-- clean out backup directories                  -->
+    <!-- clean out backup directories                                  -->
     <!-- ============================================================= -->
     <target name="clean_backups">
         <delete includeemptydirs="true">
@@ -174,7 +174,7 @@ Common usage:
     <!-- ============================================================= -->
     <!-- Update the config dir, only adds files, if a file is altered  -->
     <!-- in the target directory, the new file is suffixed wth *.new   -->
-    <!-- and should be hand updated afterward                .          -->
+    <!-- and should be hand updated afterward.                         -->
     <!-- ============================================================= -->
     <target name="update_configs"
             depends="overwrite_configs,overwrite_solr_configs"
@@ -847,7 +847,7 @@ Common usage:
     <!-- ============================================================= -->
 
     <target name="fresh_install"
-            depends="init_installation,init_configs,install_code"
+            depends="init_installation,init_configs,test_database,install_code"
             description="Do a fresh install of the system, overwriting any data">
 
         <delete failonerror="no">
